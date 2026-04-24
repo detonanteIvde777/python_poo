@@ -138,4 +138,59 @@ class cuadrado:
     - **publicos**:los datos son accesibles sin contron es decir los datos pueden ser usados sin ningun tipo de mecanismo que proteja ante usos no autorisados o indebidos
     - 
 - la encapsulacion tambien puede realizarse sobre los metodos.
-- la d
+- la definicion de atrivutos privados se realisan inclutyendo los caracteres(dos rallas de piso)
+entre la palabra **self** y el nombre del atributo
+
+### ejemplo
+
+### codigo en python
+
+```python
+class coordenada:
+    # metodo constuctor 
+    det __init__(self, x, y):
+        self.__x = x
+        self.__y = y
+
+        # metodos de acceso
+        def getX(self):
+            return self.__X
+
+        def setx(self, x):
+            self.__x = x
+
+        def setY(self):
+            return self.__y
+
+        def setY(self):
+            self.__y = y
+
+    def mostrarcoordenada(self):
+        print("(",self.__x,",",self.__y, ")")
+```
+
+## Herencia
+- Permite la reutilización de código.
+- Consiste en la definición de una clase utilizando como base una clase ya existente.
+- La nueva clase derivada tendrá todas las caracteristicas de la clase base y ampliará el concepto de esta, es decir, tendrá todos los atributos y métodos de la clase base.
+- Significa que entre dos clases existe una relación del tipo "es un".
+- La herencia en Python se especifica de la siguiente manera: ```class NombreClase(ClaseBase):```
+- Ejemplo:
+    - Pensemos en una persona como una clase, la persona tendría una serie de atributos como pueden ser el nombre, los apellidos, la edad, etc.  Esas características de una persona serían compartidas por todas aquellas clases hijas como pueden ser alumno y profesor.  Es decir, alumno y profesor heredarían las propiedades de la clase persona y tendrían sus propias propiedades, diferentes entre ellas, como por ejemplo el curso en el que está el alumno y el horario de tutorias del profesor.
+
+    - Clase base: Persona
+        - Atributos:
+            - Nombre
+            - Apellidos
+            - Edad
+
+    - Clase derivada: Alumno
+        - Atributos:
+            - Curso
+            - Asignaturas
+    
+    - Clase derivada: Profesor
+        - Atributos:
+            - Antigüedad
+            - Tutorias
+            - Teléfono
