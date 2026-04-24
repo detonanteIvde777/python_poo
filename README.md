@@ -77,3 +77,65 @@ if _name_ == main():
 ## representacion en ram del objeto creado
 
 ![alt text](3aa306b3-3e08-4e51-83c5-c485d0878bb0.jpg)
+
+## coomposicion 
+- consiste en a creacion de nuevas clases a partir de otras clases ya existen que actuan como elementoscompositores de la nueva.
+- las clasese existentes seran atributos de la nueva clase.
+
+### ejemplo 
+
+- una cordenada en dos dinmensiones esta compuesto por dos valores, el valor en el eje de las x y el valor en el eje de las y. esto podria ser una clase
+- un cuadrado esta compuesto por 4 coordenadas que son los cuatro vertices. esto podria ser una clase que esta compuesto por cuatro clases de objetos coordenada.
+
+### codigo python
+```python
+class coordenada:
+    # metodo constuctor 
+    det __init__(self, x, y):
+        self.__x = x
+        self.__y = y
+
+        # metodos de acceso
+        def getX(self):
+            return self.__X
+
+        def setx(self, x):
+            self.__x = x
+
+        def setY(self):
+            return self.__y
+
+        def setY(self):
+            self.__y = y
+
+    def mostrarcoordenada(self):
+        print("(",self.__x,",",self.__y, ")")
+
+class cuadrado:
+    # metodo constructor 
+    def __init__(self, v1, v2, v3, v4):
+        self.v1 = v1
+        self.v2 = v2
+        self.v3 = v3
+        self.v4 = v4
+
+    def mostrarvertices(self):
+        print("el cuaadrado esta  compuesto por los siguientes vertices: ")
+        self.v1.mostrarcoordenadas() 
+        self.v2.mostrarcoordenadas() 
+        self.v3.mostrarcoordenadas() 
+        self.v4.mostrarcoordenadas() 
+```
+
+### representacion grafica del objeto
+
+![alt text](07db3605-254e-482a-a371-383f624abc9f.jpg)
+
+## encapsulacion
+
+- uno de los objetivos quetiene la POO es proteger los datos de acceso o usos no controlados y esto es como se conose como **encapsulacioan**
+- los atributos que componen una clase pueden ser de 2 tipos:
+    - **publicos**:los datos son accesibles sin contron es decir los datos pueden ser usados sin ningun tipo de mecanismo que proteja ante usos no autorisados o indebidos
+    - 
+- la encapsulacion tambien puede realizarse sobre los metodos.
+- la d
